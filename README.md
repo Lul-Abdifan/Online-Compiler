@@ -1,6 +1,6 @@
 # Online Compiler
 
-Online Compiler is a web-based platform powered by an Application Programming Interface (API) that revolutionizes the coding experience. This platform empowers users to seamlessly write, compile, and run code in a variety of programming languages, eliminating the need for installing any software on their local computers.
+Online Compiler is a web-based platform powered by an Application Programming Interface (CodeX API) that revolutionizes the coding experience. This platform empowers users to seamlessly write, compile, and run code in a variety of programming languages, eliminating the need for installing any software on their local computers.
 
 ## Key Features:
 
