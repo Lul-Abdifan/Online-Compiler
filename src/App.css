@@ -1,5 +1,8 @@
-.App {
-  /* text-align: center; */
-  margin-top: 100px;
-}
+.editor-content {
+  /* display: flex !important;
+  justify-content: center; */
+  background-color: brown !important;
+  color:bisque;
 
+
+}
