@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import Editor from '@monaco-editor/react';
 import GroupSizesColors from './GroupSizesColors';
+import Button from '@mui/material/Button';
 import { files } from './language';
 
 
@@ -19,17 +20,30 @@ export default function Edit() {
   console.log(file)
   return (
     <div style={{display: 'flex', margin: '50px'}}>
+        
+   
     <GroupSizesColors onClickFromButton ={onClickFromButtons}/>
-    <div style={{height: "70vh",width: "50%"}}>
-      <h2>Input is here</h2>
+
+   
+     
+ <div >
+      
+<div style={{height: "75vh",width: "45vw"}}>
+<h2>Input is here
+       <Button variant="outlined" disabled style={{marginLeft:"20px"}}>
+  {file.name}
+</Button>
+</h2>
       <Editor
       key={lang} 
       theme="vs-dark"
         defaultLanguage={file.language}
         onChange={handleEditorChange}
         defaultValue={file.value}
-        // style={{padding: "30px"}}
+        
+       
       />
+    </div>
     </div>
     <div><h2>This is output</h2></div>
   </div>

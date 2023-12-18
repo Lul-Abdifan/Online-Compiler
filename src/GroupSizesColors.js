@@ -26,12 +26,9 @@ export default function GroupSizesColors({onClickFromButton}) {
   ];
 
 
-  return (
-    <Box
- 
-    >
-     
-     <ButtonGroup size="large" style={{outline:'none', display: 'flex', flexDirection: 'column',paddingTop:'80px', alignItems: 'flex-start' }} aria-label="small button group">
+  return ( 
+    <Box>
+      <ButtonGroup size="large" style={{display: 'flex', flexDirection: 'column',marginRight: '40px',marginTop: "70px", alignItems: 'flex-start' }} aria-label="small button group">
         
         {buttons}
       </ButtonGroup>
