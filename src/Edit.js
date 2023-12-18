@@ -20,13 +20,8 @@ export default function Edit() {
   console.log(file)
   return (
     <div style={{display: 'flex', margin: '50px'}}>
-        
-   
     <GroupSizesColors onClickFromButton ={onClickFromButtons}/>
-
-   
-     
- <div >
+<div >
       
 <div style={{height: "75vh",width: "45vw"}}>
 <h2>Input is here
@@ -45,7 +40,21 @@ export default function Edit() {
       />
     </div>
     </div>
-    <div><h2>This is output</h2></div>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+       <div>
+        <h2>This is output</h2>
+      </div>
+      <div>
+        <Button variant="contained" color="success" style={{marginLeft: "20px"}}
+          onClick={() => {
+            alert('clicked');
+          }}
+        >
+          Run
+        </Button>
+      </div>
+    </div>
+    
   </div>
   )
 }
