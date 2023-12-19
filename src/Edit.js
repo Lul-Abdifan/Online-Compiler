@@ -75,7 +75,7 @@ export default function Edit() {
           // theme={theme === 'light' ? 'light' : 'vs-dark'}
           // defaultLanguage={file.language}
           // onChange={handleEditorChange}
-          // defaultValue={file.value}
+          defaultValue={file.defaultOutput}
         />
         </div>
         <div>
