@@ -1,14 +1,14 @@
 export const files = {
   'javascript': {
     name: 'main.js',
-    language: 'javascript',
-    value: "console.log('Hello, World!');",
+    language: 'js',
+    defaultvalue: "console.log(' World!');",
     defaultOutput:"Hello, World!",
 
   },
   'python': {
     name: 'main.py',
-    language: 'python',
+    language: 'py',
     value: "print('Hello, World!')",
     defaultOutput:"Hello, World!",
 
