@@ -34,10 +34,18 @@ export const files = {
     defaultOutput:"Hello, World!",
 
   },
-  'php': {
-    name: 'main.php',
-    language: 'php',
+  'c': {
+    name: 'main.c',
+    language: 'c',
     value: "<?php\n\necho 'Hello, World!';\n?>",
+    defaultOutput:"Hello, World!",
+
+  },
+ 
+  'cs': {
+    name: 'main.c#',
+    language: 'cs',
+    value: "fn main() {\n    println!('Hello, World!');\n}",
     defaultOutput:"Hello, World!",
 
   },
@@ -45,13 +53,6 @@ export const files = {
     name: 'main.rb',
     language: 'ruby',
     value: "puts 'Hello, World!'",
-    defaultOutput:"Hello, World!",
-
-  },
-  'rust': {
-    name: 'main.rs',
-    language: 'rust',
-    value: "fn main() {\n    println!('Hello, World!');\n}",
     defaultOutput:"Hello, World!",
 
   },
