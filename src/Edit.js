@@ -60,18 +60,17 @@ export default function Edit() {
       // Set the output in state
       setOutput(response.data.output || '');
 
-      // Check for errors in the response
-      // if (response.data.error) {
-      //   setOutput(response.data.error);
-      // } else {
-      //   setOutput('');
-      // }
+      if (response.data.error) {
+        setError(response.data.error);
+      } else {
+        setError('');
+      }
 
     } catch (error) {
       console.error('API Error:', error.response ? error.response.data : error.message);
       // Set the error state
       // setError(error.response ? error.response.data.error || 'Unknown error' : error.message || 'Unknown error');
-      // setOutput(error.response.data.error)
+      // setError(error.response.data.error)
     } finally {
       // Hide loading indicator
       setLoading(false);
@@ -125,7 +124,7 @@ export default function Edit() {
          
           <Editor
           key={output}
-            defaultValue={output}
+            defaultValue={error === "" ? output:`Error: ${error}`}
 
           />
        
