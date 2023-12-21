@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="logo" style={logoStyle}>
         <a href="#" style={linkStyle}>P2P Interview</a>
       </div>
-      <div className="menu-item" style={menuItemStyle}>MockHub</div>
+      <div className="menu-item" style={menuItemStyle}> MockHub</div>
 
       <div className="menu" style={menuStyle}>
         <a href="/accounts/signup/user/free" style={{ ...linkStyle, marginRight: "10px" }}>Sign Up</a>

@@ -110,6 +110,7 @@ export default function Edit() {
           onMount={(editor, monaco) => {
             editorRef.current = editor;
           }}
+          loading = {false}
           // other props...
         />
       </div>
@@ -120,6 +121,8 @@ export default function Edit() {
           <Editor
           key={output}
             defaultValue={error === "" ? output:`Error: ${error}`}
+            loading = {false}
+
 
           />
        
