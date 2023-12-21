@@ -10,7 +10,7 @@ import qs from 'qs';
 
 export default function Edit() {
   const [lang, setLang] = useState('javascript');
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('vs-dark');
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
@@ -72,7 +72,7 @@ export default function Edit() {
   };
 
   return (
-    <div style={{ display: 'flex', margin: '50px' }}>
+    <div style={{ display: 'flex', margin: '10px 30px' }}>
       
       <GroupSizesColors onClickFromButton={handleLanguageChange} />
       <div style={{ height: '75vh', width: '45vw' }}>
