@@ -1,4 +1,6 @@
 import React,{useState,useEffect} from 'react';
+import { DarkModeCom } from './DarkMode';
+
 import Edit from './Edit';
 import Navbar from './Navbar';
 import Loading from './Slider';
@@ -10,7 +12,7 @@ function App() {
   useEffect(()=>{
     const timeOut = setTimeout(()=>{
       setLoading(false)
-    },3000)
+    },2500)
     return () => clearTimeout(timeOut);
   },[])
 
@@ -20,8 +22,9 @@ function App() {
     <div >
       {loading ? <Loading/> :
       <div>
-      <Navbar />
-      <Edit/>
+      <DarkModeCom />
+      {/* <Navbar />
+      <Edit/> */}
       
       </div>
 }
