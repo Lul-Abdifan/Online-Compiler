@@ -22,9 +22,9 @@ function App() {
     <div >
       {loading ? <Loading/> :
       <div>
-      <DarkModeCom />
-      {/* <Navbar />
-      <Edit/> */}
+      
+      <Navbar />
+      <Edit/>
       
       </div>
 }

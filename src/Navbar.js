@@ -1,4 +1,5 @@
 import React from 'react';
+import { DarkModeCom } from './DarkMode';
 
 const Navbar = () => {
   const navbarStyle = {
@@ -7,7 +8,7 @@ const Navbar = () => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 20px",
+    padding: "10px 50px",
     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)", // Box shadow for a subtle elevation
   };
 
@@ -36,10 +37,13 @@ const Navbar = () => {
  
   return (
     <nav style={navbarStyle}>
-      <div className="logo" style={logoStyle}>
-        <a href="#" style={linkStyle}>P2P Interview</a>
+      <div className="logo" style={{...logoStyle,display:'flex'}}>
+      <DarkModeCom />
+        <a href="#" style = {{...linkStyle,marginLeft : "50px"}}>P2P Interview</a>
       </div>
-      <div className="menu-item" style={menuItemStyle}> MockHub</div>
+      <div className="menu-item" style={linkStyle}> 
+      <h3>MockHub</h3>
+      </div>
 
       <div className="menu" style={menuStyle}>
         <a href="/accounts/signup/user/free" style={{ ...linkStyle, marginRight: "10px" }}>Sign Up</a>
