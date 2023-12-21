@@ -22,9 +22,9 @@ export default function GroupSizesColors({onClickFromButton}) {
     <Button key="six" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('c')}>C</Button>,
     <Button key="ten" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('go')}>Go</Button>,
 
-    // <Button key="seven" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('rust')}>Rust</Button>,
-    // <Button key="eight" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('swift')}>Swift</Button>,
-    // <Button key="nine" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('r')}>r</Button>,
+    <Button key="seven" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('rust')}>Rust</Button>,
+    <Button key="eight" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('swift')}>Swift</Button>,
+    <Button key="nine" style={{ marginTop: '10px', width: '100%' }} onClick={()=>setLang('r')}>r</Button>,
   ];
 
 
