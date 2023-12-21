@@ -65,7 +65,6 @@ export default function Edit() {
     } catch (error) {
       console.error('API Error:', error.response ? error.response.data : error.message);
       
-      // setError(error.response.data.error)
     } finally {
      
       setLoading(false);
