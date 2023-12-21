@@ -40,7 +40,7 @@ export default function Edit() {
       const requestData = qs.stringify({
         code: userCode,
         language: files[lang].language,
-        input: '', // Example input, you may want to get this from a user input field
+        input: '',
       });
 
       const apiConfig = {
@@ -54,10 +54,6 @@ export default function Edit() {
 
       const response = await axios(apiConfig);
 
-      // Handle the API response
-      console.log('API Response:', response.data);
-
-      // Set the output in state
       setOutput(response.data.output || '');
 
       if (response.data.error) {
@@ -68,17 +64,17 @@ export default function Edit() {
 
     } catch (error) {
       console.error('API Error:', error.response ? error.response.data : error.message);
-      // Set the error state
-      // setError(error.response ? error.response.data.error || 'Unknown error' : error.message || 'Unknown error');
+      
       // setError(error.response.data.error)
     } finally {
-      // Hide loading indicator
+     
       setLoading(false);
     }
   };
 
   return (
     <div style={{ display: 'flex', margin: '50px' }}>
+      
       <GroupSizesColors onClickFromButton={handleLanguageChange} />
       <div style={{ height: '75vh', width: '45vw' }}>
         <div>

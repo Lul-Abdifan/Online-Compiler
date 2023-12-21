@@ -1,12 +1,16 @@
 import React from 'react';
 import Edit from './Edit';
+import Navbar from './Navbar';
 
 function App() {
   
 
   return (
     <div >
-        <Edit/>
+      <Navbar />
+      <Edit/>
+      
+
     </div>
   );
 }
