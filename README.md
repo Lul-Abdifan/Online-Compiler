@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Online Compiler
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Online Compiler is a web-based platform powered by an Application Programming Interface (CodeX API) that revolutionizes the coding experience. This platform empowers users to seamlessly write, compile, and run code in a variety of programming languages, eliminating the need for installing any software on their local computers.
 
-## Available Scripts
+## Key Features:
 
-In the project directory, you can run:
+- **Accessibility**: With Online Compiler, you can access the platform from any device with an internet connection. This flexibility allows for coding on the go without the constraints of specific environments.
 
-### `npm start`
+- **Multi-Language Support**: The platform supports a wide range of programming languages, including but not limited to C, C++, Java, Python, and more. This extensive language support caters to the diverse needs of developers.
+ (CodeX API)
+- **Code Testing**: Online Compiler serves as a convenient testing ground for code snippets. Users can easily experiment with their code, ensuring it functions as intended before deploying it in a production environment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **No Installation Required**: One of the major advantages of Online Compiler is that it eliminates the hassle of installing and configuring development environments. Users can write and test their code directly on the platform without the need for any local setup.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User-Friendly Interface**: The platform features an intuitive and user-friendly interface, making it suitable for both beginners and experienced developers. The streamlined design enhances the overall coding experience.
 
-### `npm test`
+- **Versatility**: Whether you are a student learning to code, a professional working on a project, or anyone in between, Online Compiler adapts to your coding needs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Future Plans:
 
-### `npm run build`
+In the future, Online Compiler plans to further enhance its capabilities. This includes expanding language support, optimizing performance, and incorporating additional features to provide an even more comprehensive coding experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Experience the convenience of coding without boundaries with Online Compiler's web-based platform and API integration (CodeX API).

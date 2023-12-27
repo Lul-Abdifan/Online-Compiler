@@ -12,7 +12,7 @@ const Loading = () => {
         height: "100vh",
       }}
     >
-      <CircleLoader color="#36d7b7" loading size={250} speedMultiplier={1} />
+      <CircleLoader color="#36d7b7" loading size={200} speedMultiplier={1} />
     </div>
   );
 };
