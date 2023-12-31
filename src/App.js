@@ -1,9 +1,10 @@
 import React,{useState,useEffect} from 'react';
-import { DarkModeCom } from './DarkMode';
 
 import Edit from './Edit';
 import Navbar from './Navbar';
 import Loading from './Slider';
+import GoogleAuth from './Authorization/GoogleAuth';
+import auth from './Config/auth'
 
 
 

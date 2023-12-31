@@ -1,5 +1,7 @@
 import React from 'react';
 import { DarkModeCom } from './DarkMode';
+import GoogleAuth from './Authorization/GoogleAuth';
+import { auth } from '../src/Config/auth'
 
 const Navbar = () => {
   const navbarStyle = {
@@ -46,8 +48,7 @@ const Navbar = () => {
       </div>
 
       <div className="menu" style={menuStyle}>
-        <a href="/accounts/signup/user/free" style={{ ...linkStyle, marginRight: "10px" }}>Sign Up</a>
-        <a href="/login" style={linkStyle}>Log In</a>
+      <GoogleAuth />
       </div>
     </nav>
   );
