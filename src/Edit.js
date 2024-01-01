@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Editor from '@monaco-editor/react';
 import GroupSizesColors from './GroupSizesColors';
 import Button from '@mui/material/Button';
@@ -14,6 +14,7 @@ export default function Edit() {
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
+
   const handleLanguageChange = (data) => {
     setLang(data);
   };
@@ -23,6 +24,11 @@ export default function Edit() {
   };
 
   const editorRef = useRef(null);
+
+  const handleEditorDidMount = (editor, monaco) => {
+    // Set the editorRef once the editor is mounted
+    editorRef.current = editor;
+  };
 
   const handleRunClick = async () => {
     try {
@@ -61,19 +67,15 @@ export default function Edit() {
       } else {
         setError('');
       }
-
     } catch (error) {
       console.error('API Error:', error.response ? error.response.data : error.message);
-      
     } finally {
-     
       setLoading(false);
     }
   };
 
   return (
     <div style={{ display: 'flex', margin: '10px 30px' }}>
-      
       <GroupSizesColors onClickFromButton={handleLanguageChange} />
       <div style={{ height: '75vh', width: '45vw' }}>
         <div>
@@ -91,7 +93,7 @@ export default function Edit() {
                 color: theme === 'light' ? '#333333' : '#ffffff',
                 border: '5px solid #cccccc',
                 borderRadius: '10px',
-                marginBottom: '15px'
+                marginBottom: '15px',
               }}
             >
               {theme === 'light' ? '🌙' : '🔆'}
@@ -107,25 +109,18 @@ export default function Edit() {
           key={lang}
           theme={theme === 'light' ? 'light' : 'vs-dark'}
           defaultLanguage={files[lang].language}
-          onMount={(editor, monaco) => {
-            editorRef.current = editor;
-          }}
-          loading = {false}
-          // other props...
+          onMount={handleEditorDidMount}
+          // ... (other props)
         />
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div style={{ height: '75vh', width: '40vw' }}>
           <h2>This is output</h2>
-         
           <Editor
-          key={output}
-            defaultValue={error === "" ? output:`Error: ${error}`}
-            loading = {false}
-
-
+            key={output}
+            defaultValue={error === '' ? output : `Error: ${error}`}
+            // ... (other props)
           />
-       
         </div>
         <div>
           <Button
