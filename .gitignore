@@ -7,7 +7,7 @@
 
 
 # Ignore Firebase config file
-/src/firebase/config.js
+/src/Config/auth.js
 
 # testing
 /coverage
