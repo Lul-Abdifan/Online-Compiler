@@ -1,39 +1,26 @@
-import React,{useState,useEffect} from 'react';
-
+import React, { useState, useEffect } from 'react';
 import Edit from './Edit';
 import Navbar from './Navbar';
 import Loading from './Slider';
-import GoogleAuth from './Authorization/GoogleAuth';
-import auth from './Config/auth'
-
-
 
 function App() {
   let [loading, setLoading] = useState(true);
-  useEffect(()=>{
-    const timeOut = setTimeout(()=>{
-      setLoading(false)
-    },2000)
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
     return () => clearTimeout(timeOut);
-  },[])
-
-  
+  }, []);
 
   return (
-    <div >
-      {loading ? <Loading/> :
-      <div>
-      
-      <Navbar />
-      <Edit/>
-      
-      </div>
-}
-    </div> 
-      
-
- 
-  
+    <div>
+      {loading ? <Loading /> :
+        <div>
+          <Navbar />
+          <Edit />
+        </div>
+      }
+    </div>
   );
 }
 

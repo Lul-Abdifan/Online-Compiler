@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState} from 'react';
 import Editor from '@monaco-editor/react';
 import GroupSizesColors from './GroupSizesColors';
 import Button from '@mui/material/Button';
@@ -110,8 +110,8 @@ export default function Edit() {
           theme={theme === 'light' ? 'light' : 'vs-dark'}
           defaultLanguage={files[lang].language}
           onMount={handleEditorDidMount}
-          // ... (other props)
-        />
+          loading = {false}   
+          />
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div style={{ height: '75vh', width: '40vw' }}>
@@ -119,8 +119,8 @@ export default function Edit() {
           <Editor
             key={output}
             defaultValue={error === '' ? output : `Error: ${error}`}
-            // ... (other props)
-          />
+loading = {false}   
+       />
         </div>
         <div>
           <Button
