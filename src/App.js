@@ -3,12 +3,13 @@ import Edit from './Edit';
 import Navbar from './Navbar';
 import Loading from './Slider';
 
+
 function App() {
   let [loading, setLoading] = useState(true);
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
     return () => clearTimeout(timeOut);
   }, []);
 
