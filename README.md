@@ -1,7 +1,7 @@
 
 #  MockInterview Platform and Online Compiler
 
-Online Compiler is a web-based platform powered by an Application Programming Interface (CodeX API) that revolutionizes the coding experience. This platform empowers users to seamlessly write, compile, and run code in a variety of programming languages, eliminating the need for installing any software on their local computers.
+ A virtual interview setup that allows two participants to engage in a mock interview. It provides a user-friendly interface for conducting practice interviews, asking and answering interview questions, and providing real-time feedback to each other.
 
 ## Key Features:
 
