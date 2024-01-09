@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+
+# Ignore Firebase config file
+/src/Config/auth.js
+
 # testing
 /coverage
 
